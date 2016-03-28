@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">cheat sheet</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2016-03-28T00:46:51+00:00</updated>
+<id>/</id>
+<author>
+  <name>daniel</name>
+  <uri>/</uri>
+  <email>d@nny.io</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[todo]]></title>
+ <link rel="alternate" type="text/html" href="/todo/" />
+  <id>/todo</id>
+  <published>2000-01-10T00:00:00+00:00</published>
+  <updated>2000-01-10T00:00:00+00:00</updated>
+  <author>
+    <name>daniel</name>
+    <uri></uri>
+    <email>d@nny.io</email>
+  </author>
+  <content type="html">
+    &lt;ul&gt;
+  &lt;li&gt;capybara&lt;/li&gt;
+  &lt;li&gt;siteprism&lt;/li&gt;
+  &lt;li&gt;git&lt;/li&gt;
+  &lt;li&gt;vim&lt;/li&gt;
+  &lt;li&gt;colors
+    &lt;ul&gt;
+      &lt;li&gt;soda
+        &lt;ul&gt;
+          &lt;li&gt;bg:   272822&lt;/li&gt;
+          &lt;li&gt;pink: ff0066&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/todo/&quot;&gt;todo&lt;/a&gt; was originally published by daniel at &lt;a href=&quot;&quot;&gt;cheat sheet&lt;/a&gt; on January 10, 2000.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[vim]]></title>
+ <link rel="alternate" type="text/html" href="/vim/" />
+  <id>/vim</id>
+  <published>2000-01-05T00:00:00+00:00</published>
+  <updated>2000-01-05T00:00:00+00:00</updated>
+  <author>
+    <name>daniel</name>
+    <uri></uri>
+    <email>d@nny.io</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;code&gt;:e filename&lt;/code&gt; # edit a file in a new buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;:bnext (or :bn)&lt;/code&gt; # go to next buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;:bprev (of :bp)&lt;/code&gt; # go to previous buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;:bd&lt;/code&gt; # delete a buffer (close a file)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;:sp filename&lt;/code&gt; # open a file in a new buffer and split window&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ctrl+ws&lt;/code&gt; # split windows&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ctrl+ww&lt;/code&gt; # switch between windows&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ctrl+wq&lt;/code&gt; # quit a window&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ctrl+wv&lt;/code&gt; # split windows vertically&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/vim/&quot;&gt;vim&lt;/a&gt; was originally published by daniel at &lt;a href=&quot;&quot;&gt;cheat sheet&lt;/a&gt; on January 05, 2000.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[capybara]]></title>
+ <link rel="alternate" type="text/html" href="/capybara/" />
+  <id>/capybara</id>
+  <published>2000-01-03T00:00:00+00:00</published>
+  <updated>2000-01-03T00:00:00+00:00</updated>
+  <author>
+    <name>daniel</name>
+    <uri></uri>
+    <email>d@nny.io</email>
+  </author>
+  <content type="html">
+    &lt;noscript&gt;&lt;pre&gt;=Navigating=
+    visit(&amp;#39;/projects&amp;#39;)
+    visit(post_comments_path(post))
+
+=Clicking links and buttons=
+    click_link(&amp;#39;id-of-link&amp;#39;)
+    click_link(&amp;#39;Link Text&amp;#39;)
+    click_button(&amp;#39;Save&amp;#39;)
+    click(&amp;#39;Link Text&amp;#39;) # Click either a link or a button
+    click(&amp;#39;Button Value&amp;#39;)
+
+=Interacting with forms=
+    fill_in(&amp;#39;First Name&amp;#39;, :with =&amp;gt; &amp;#39;John&amp;#39;)
+    fill_in(&amp;#39;Password&amp;#39;, :with =&amp;gt; &amp;#39;Seekrit&amp;#39;)
+    fill_in(&amp;#39;Description&amp;#39;, :with =&amp;gt; &amp;#39;Really Long Text…&amp;#39;)
+    choose(&amp;#39;A Radio Button&amp;#39;)
+    check(&amp;#39;A Checkbox&amp;#39;)
+    uncheck(&amp;#39;A Checkbox&amp;#39;)
+    attach_file(&amp;#39;Image&amp;#39;, &amp;#39;/path/to/image.jpg&amp;#39;)
+    select(&amp;#39;Option&amp;#39;, :from =&amp;gt; &amp;#39;Select Box&amp;#39;)
+
+=scoping=
+    within(&amp;quot;//li[@id=&amp;#39;employee&amp;#39;]&amp;quot;) do
+      fill_in &amp;#39;Name&amp;#39;, :with =&amp;gt; &amp;#39;Jimmy&amp;#39;
+    end
+    within(:css, &amp;quot;li#employee&amp;quot;) do
+      fill_in &amp;#39;Name&amp;#39;, :with =&amp;gt; &amp;#39;Jimmy&amp;#39;
+    end
+    within_fieldset(&amp;#39;Employee&amp;#39;) do
+      fill_in &amp;#39;Name&amp;#39;, :with =&amp;gt; &amp;#39;Jimmy&amp;#39;
+    end
+    within_table(&amp;#39;Employee&amp;#39;) do
+      fill_in &amp;#39;Name&amp;#39;, :with =&amp;gt; &amp;#39;Jimmy&amp;#39;
+    end
+
+=Querying=
+    page.has_xpath?(&amp;#39;//table/tr&amp;#39;)
+    page.has_css?(&amp;#39;table tr.foo&amp;#39;)
+    page.has_content?(&amp;#39;foo&amp;#39;)
+    page.should have_xpath(&amp;#39;//table/tr&amp;#39;)
+    page.should have_css(&amp;#39;table tr.foo&amp;#39;)
+    page.should have_content(&amp;#39;foo&amp;#39;)
+    page.should have_no_content(&amp;#39;foo&amp;#39;)
+    find_field(&amp;#39;First Name&amp;#39;).value
+    find_link(&amp;#39;Hello&amp;#39;).visible?
+    find_button(&amp;#39;Send&amp;#39;).click
+    find(&amp;#39;//table/tr&amp;#39;).click
+    locate(&amp;quot;//*[@id=&amp;#39;overlay&amp;#39;&amp;quot;).find(&amp;quot;//h1&amp;quot;).click
+    all(&amp;#39;a&amp;#39;).each { |a| a[:href] }
+
+=Scripting=
+    result = page.evaluate_script(&amp;#39;4 + 4&amp;#39;);
+
+=Debugging=
+    save_and_open_page
+
+=Asynchronous JavaScript=
+    click_link(&amp;#39;foo&amp;#39;)
+    click_link(&amp;#39;bar&amp;#39;)
+    page.should have_content(&amp;#39;baz&amp;#39;)
+    page.should_not have_xpath(&amp;#39;//a&amp;#39;)
+    page.should have_no_xpath(&amp;#39;//a&amp;#39;)
+
+=XPath and CSS=
+    within(:css, &amp;#39;ul li&amp;#39;) { ... }
+    find(:css, &amp;#39;ul li&amp;#39;).text
+    locate(:css, &amp;#39;input#name&amp;#39;).value
+    Capybara.default_selector = :css
+    within(&amp;#39;ul li&amp;#39;) { ... }
+    find(&amp;#39;ul li&amp;#39;).text
+    locate(&amp;#39;input#name&amp;#39;).value
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/zhengjia/428105.js&quot;&gt; &lt;/script&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/capybara/&quot;&gt;capybara&lt;/a&gt; was originally published by daniel at &lt;a href=&quot;&quot;&gt;cheat sheet&lt;/a&gt; on January 03, 2000.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[git]]></title>
+ <link rel="alternate" type="text/html" href="/git/" />
+  <id>/git</id>
+  <published>2000-01-02T00:00:00+00:00</published>
+  <updated>2000-01-02T00:00:00+00:00</updated>
+  <author>
+    <name>daniel</name>
+    <uri></uri>
+    <email>d@nny.io</email>
+  </author>
+  <content type="html">
+    
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# list committers by commit count&lt;/span&gt;
+git &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;-each-ref --format&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;%(objectname)&amp;#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;r&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; git log --pretty&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;format:%an &lt;span class=&quot;s2&quot;&gt;&amp;quot;$r&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sort &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; uniq -c &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sort -n
+
+&lt;span class=&quot;c&quot;&gt;# git log one-liners&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# hash&lt;/span&gt;
+git rev-parse HEAD &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; cut -c 1-7
+git log --pretty&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;format:&lt;span class=&quot;s2&quot;&gt;&amp;quot;%h&amp;quot;&lt;/span&gt; -1
+git log --pretty&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;oneline --abbrev-commit &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; head -n1 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; awk &lt;span class=&quot;s1&quot;&gt;&amp;#39;{print $1}&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# message&lt;/span&gt;
+git log --pretty&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;format:&lt;span class=&quot;s2&quot;&gt;&amp;quot;%s&amp;quot;&lt;/span&gt; -1
+git log --pretty&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;oneline --abbrev-commit &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; head -n1 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; awk &lt;span class=&quot;s1&quot;&gt;&amp;#39;BEGIN{ORS=&amp;quot; &amp;quot;}{for(i=2;i&amp;lt;NF;i++){print $i}}&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# refs&lt;/span&gt;
+git log --pretty&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;format:&lt;span class=&quot;s2&quot;&gt;&amp;quot;%d&amp;quot;&lt;/span&gt; -1
+git log --pretty&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;oneline --abbrev-commit --decorate &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;
+head -n1 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; awk &lt;span class=&quot;s1&quot;&gt;&amp;#39;BEGIN{ORS=&amp;quot; &amp;quot;}{for(i=2;i&amp;lt;NF;i++){print $i}}&amp;#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sed &lt;span class=&quot;s1&quot;&gt;&amp;#39;s/(//;s/)[^)]*$//&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# timestamp&lt;/span&gt;
+git log --pretty&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;format:&lt;span class=&quot;s2&quot;&gt;&amp;quot;%at&amp;quot;&lt;/span&gt; -1&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/git/&quot;&gt;git&lt;/a&gt; was originally published by daniel at &lt;a href=&quot;&quot;&gt;cheat sheet&lt;/a&gt; on January 02, 2000.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[home]]></title>
+ <link rel="alternate" type="text/html" href="/intro/" />
+  <id>/intro</id>
+  <published>2000-01-01T00:00:00+00:00</published>
+  <updated>2000-01-01T00:00:00+00:00</updated>
+  <author>
+    <name>daniel</name>
+    <uri></uri>
+    <email>d@nny.io</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;cheat-sheet&quot;&gt;cheat sheet&lt;/h1&gt;
+
+&lt;p&gt;a sheet for cheating&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/intro/&quot;&gt;home&lt;/a&gt; was originally published by daniel at &lt;a href=&quot;&quot;&gt;cheat sheet&lt;/a&gt; on January 01, 2000.&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>
