@@ -1,0 +1,24 @@
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># list committers by commit count</span>
+git <span class="k">for</span>-each-ref --format<span class="o">=</span><span class="s1">&#39;%(objectname)&#39;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read </span>r<span class="p">;</span> <span class="k">do</span> git log --pretty<span class="o">=</span>format:%an <span class="s2">&quot;$r&quot;</span><span class="p">;</span> <span class="se">\</span>
+<span class="nb">echo</span><span class="p">;</span> <span class="k">done</span> <span class="p">|</span> sort <span class="p">|</span> uniq -c <span class="p">|</span> sort -n
+
+<span class="c"># git log one-liners</span>
+
+<span class="c"># hash</span>
+git rev-parse HEAD <span class="p">|</span> cut -c 1-7
+git log --pretty<span class="o">=</span>format:<span class="s2">&quot;%h&quot;</span> -1
+git log --pretty<span class="o">=</span>oneline --abbrev-commit <span class="p">|</span> head -n1 <span class="p">|</span> awk <span class="s1">&#39;{print $1}&#39;</span>
+
+<span class="c"># message</span>
+git log --pretty<span class="o">=</span>format:<span class="s2">&quot;%s&quot;</span> -1
+git log --pretty<span class="o">=</span>oneline --abbrev-commit <span class="p">|</span> head -n1 <span class="p">|</span> awk <span class="s1">&#39;BEGIN{ORS=&quot; &quot;}{for(i=2;i&lt;NF;i++){print $i}}&#39;</span>
+
+<span class="c"># refs</span>
+git log --pretty<span class="o">=</span>format:<span class="s2">&quot;%d&quot;</span> -1
+git log --pretty<span class="o">=</span>oneline --abbrev-commit --decorate <span class="p">|</span> <span class="se">\ </span>
+head -n1 <span class="p">|</span> awk <span class="s1">&#39;BEGIN{ORS=&quot; &quot;}{for(i=2;i&lt;NF;i++){print $i}}&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/(//;s/)[^)]*$//&#39;</span>
+
+<span class="c"># timestamp</span>
+git log --pretty<span class="o">=</span>format:<span class="s2">&quot;%at&quot;</span> -1</code></pre></figure>
+
